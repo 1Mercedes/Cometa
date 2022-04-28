@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link rel="stylesheet" href="libs/all.min.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media.css">
 </head>
 
 <body>
     <header class="header">
         <nav class="navbar container justify-content-between navbar-expand-lg">
             <a href="#!" class="logo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler header__toggler" data-bs-toggle="collapse" data-bs-target="#nav"
+               >
                 <i class="fas fa-star"></i>
             </button>
-            <div class="collapse justify-content-end navbar-collapse" id="nav">
+            <div class="collapse navbar-collapse justify-content-end " id="nav">
                 <ul class="navbar-nav align-items-end align-items-lg-center">
                     <li class="nav-item">
                         <a class="header__link" aria-current="page" href="#">About Me</a>
@@ -36,7 +37,19 @@
                 </ul>
             </div>
         </nav>
+        <div id="slider" class="intro container carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="row">
+                <div class="col-6">
+                    <div class="col-10">
+                        <p class="intro__subtitle">My Beginning</p>
+                        <h1 class="intro__title">Self-Development And Training In The Training Center</h1>
+                        <a href="" class="intro__button">GET STARTED NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
+    <script src="libs/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

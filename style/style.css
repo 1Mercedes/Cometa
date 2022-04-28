@@ -5,10 +5,10 @@
     --secondary-font-face: "Trebuchet";
     --primary-text-color: #323232;
     --secondary-text-color: #FFFFFF;
-    --primary-background:#FFFFFF;
+    --primary-background:#151437;
     --secondary-background:#7177F1;
     --primary-title-color:#FFFFFF;
-    --secondary-title-color-alt:#151437;
+    --secondary-title-color-alt:#FFFFFF;
     --primary-link-color:#7177F1;
     --secondary-link-color:#FFFFFF;
 }
@@ -72,4 +72,13 @@ body{
 .header__tel:hover{
     color: var(--secondary-link-color);
     text-shadow: 0 0 15px;
+}
+
+.header__toggler{
+    color: var(--primary-title-color);
+    font-size: 35px;
+}
+
+.header__toggler:focus{
+    box-shadow: none;
 }
