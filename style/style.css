@@ -82,3 +82,131 @@ body{
 .header__toggler:focus{
     box-shadow: none;
 }
+
+.intro__subtitle{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 22px;
+    text-transform: capitalize;
+}
+
+.intro__title{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.25;
+    text-transform: capitalize;
+    color: var(--primary-link-color);
+    margin-bottom: 25px;
+}
+
+.intro__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 300px;
+    height: 45px;
+    background: var(--secondary-background);
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--secondary-link-color);
+    margin-bottom: 50px;
+    transition: 0.5s color, 0.5s background;
+}
+
+.intro__button:hover{
+    color: var(--primary-link-color);
+    background: var(--primary-background);
+}
+
+.intro__logo{
+    max-width: 100%;
+    margin-bottom: 15px;
+}
+
+.intro__logo_svg{
+    height: 90px;
+    color: #790FF1;
+}
+
+.intro__name{
+    color: var(--primary-link-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.intro__image{
+    max-width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.intro__indicators{
+    display: flex;
+    justify-content: center;
+    position: static;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.intro__indicators .carousel__dot{
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+    border: none;
+    outline: none;
+    background: #EBEBEB;
+    margin: 0 15px;
+    opacity: 1;
+}
+
+.carousel__dot.active{
+    background: #7177F1;
+}
+
+.rect{
+    position: absolute;
+    border-width: 5px;
+    border-style: solid;
+    z-index: -5;
+}
+
+.rect_1{
+    top: 30px;
+    left: 250px;
+    border-radius: 50%;
+    border-color: #790FF1;
+    width: 60px;
+    height: 60px;
+}
+
+.rect_2{
+    width: 80px;
+    height: 80px;
+    border-color: #9297EF;
+    left: 20px;
+    top: 95px;
+    transform: matrix(0.71, 0.71, -0.7, -0.71, 0 , 0);
+}
+
+.rect_3{
+    width: 100px;
+    height: 100px;
+    border-color: #9297EF;
+    right: 160px;
+    top: 80px;
+}
+
+.rect_4{
+    width: 80px;
+    height: 80px;
+    border-color: #7177F1;
+    right: 300px;
+    top: 360px;
+    transform: matrix(0.76, -0.68, 0.76, 0, 0);
+}
