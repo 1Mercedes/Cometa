@@ -191,7 +191,7 @@ body{
     border-color: #9297EF;
     left: 20px;
     top: 95px;
-    transform: matrix(0.71, 0.71, -0.7, -0.71, 0 , 0);
+    transform: matrix(0.71, 0.71, -0.7, 0.71, 0, 0);
 }
 
 .rect_3{
@@ -208,5 +208,129 @@ body{
     border-color: #7177F1;
     right: 300px;
     top: 360px;
-    transform: matrix(0.76, -0.68, 0.76, 0, 0);
+    transform: matrix(0.76, -0.66, 0.64, 0.76, 0, 0);
+}
+
+.about{
+    margin-top: 75px;
+    position: relative;
+}
+
+.about_left{
+    position: relative;
+}
+
+.about_image{
+    margin: auto;
+    display: block;
+    max-width: 100%;
+}
+
+.about_slogan{
+    background: var(--secondary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    position: absolute;
+    width: 190px;
+    height: 65px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    box-shadow: 0px 0px 20px rgba(113, 119, 241, 0.5);
+}
+
+.about_mark{
+    position: absolute;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    background: #0FDAC2;
+    top: -14px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.about_right{
+    background: var(--primary-background);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.about_title{
+    margin-bottom: 20px;
+    color: var(--primary-title-color);
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.75;
+    text-transform: capitalize;
+}
+
+.about_text{
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.about_button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--secondary-background);
+    border-radius: 8px;
+    height: 45px;
+    width: 190px;
+    font-size: 18px;
+    color: var(--secondary-link-color);
+    text-transform: uppercase;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    transition: 0.5s color, 0.5s background;
+}
+
+.about_button:hover{
+    background: var(--primary-background);
+    color: var(--primary-title-color);
+}
+
+.shape{
+    position: absolute;
+    z-index: -4;
+    max-width: 60%;
+}
+
+.shape_1{
+    right: 0;
+    top: -500px;
+}
+
+.rect_5{
+    width: 60px;
+    height: 60px;
+    border-color: #9297EF;
+    right: 120px;
+    bottom: -20px;
+    border-radius: 50%;
+}
+
+.capabilities{
+    margin-top: 75px;
+    position: relative;
+}
+
+.capabilities_title{
+    text-align: center;
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--primary-title-color);
+    margin-bottom: 30px;
 }
