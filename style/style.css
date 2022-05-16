@@ -211,6 +211,24 @@ body{
     transform: matrix(0.76, -0.66, 0.64, 0.76, 0, 0);
 }
 
+.rect_5{
+    width: 60px;
+    height: 60px;
+    border-color: #9297EF;
+    left: 350px;
+    top: 100px;
+    border-radius: 50%;
+}
+
+.rect_6{
+    width: 60px;
+    height: 60px;
+    border-color: #9297EF;
+    right: 120px;
+    bottom: -20px;
+    border-radius: 50%;
+}
+
 .about{
     margin-top: 75px;
     position: relative;
@@ -418,4 +436,104 @@ body{
     font-size: 18px;
     line-height: 1.5;
     text-transform: capitalize;
+}
+
+.works{
+    position: relative;
+    margin-top: 75px;
+}
+
+.works_title{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--primary-link-color);
+    margin-bottom: 30px;
+}
+
+.works_tabs{
+    display: flex;
+    flex-direction: column;
+}
+
+.works_tab{
+    background: var(--primary-background);
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    padding: 20px;
+    border: none;
+    outline: none;
+    text-align: left;
+    color: var(--primary-link-color);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    flex-grow: 1;
+    transition: 0.5;
+}
+
+.works_tab:hover,
+.works_tab.active{
+    background: var(--secondary-background);
+    color: var(--secondary-link-color);
+}
+
+.works_tab:first-of-type{
+    border-radius: 8px 8px 0 0;
+}
+
+.works_tab:last-of-type{
+    border-radius: 0 0 8px 8px;
+}
+
+.works_item{
+    background: var(--primary-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 3px rgba(113, 119, 241, 0.15);
+    height: 100%;
+}
+
+.works_image{
+    max-width: 332px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 0 0 8px 8px;
+}
+
+.works_name{
+    font-weight: 600;
+    color: var(--primary-title-color);
+    font-size: 24px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.works_text{
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.works_button{
+    width: 190px;
+    height: 45px;
+    box-shadow: 0px 0px 5px 1px rgba(113, 119, 241, 0.5);
+    border-radius: 8px;
+    background: var(--secondary-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-link-color);
+    text-decoration: none;
+    transition: 0.5s color, 0.5s background;
+}
+
+.works_button:hover{
+    color: var(--primary-link-color);
+    background: var(--primary-background);
 }
